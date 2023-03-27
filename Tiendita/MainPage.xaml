@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tiendita.MainPage"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Background="#e4e9f7">
+        <StackLayout Padding="40">
+            <Image Source="logologin.png"
+               WidthRequest="250"/>
+        </StackLayout>
+        <Label HorizontalOptions="Center"
+               Text="Hola !"
+               TextColor="#707070"
+               FontSize="40"
+               FontAttributes="Bold"/>
+        <Label Text="Bienvenido al sistema de ventas de la tienda creado por prenix system, Espero tengas un buen dia"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               TextColor="#707070"
+               FontSize="Medium"
+               Padding="10"/>
+        <StackLayout Margin="25">
+                <Button Text="Iniciar"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"
+                    Margin="10"
+                    CornerRadius="10"
+                    BackgroundColor="#7083ad"
+                    TextColor="#d4d9dc"
+                    x:Name="btnLogin"
+                    Clicked="btnLogin_Clicked"/>
+                <Button Text="Registrarse"
+                    HorizontalOptions="Center"
+                    WidthRequest="300"
+                    Margin="10"
+                    CornerRadius="10"
+                    BackgroundColor="#a2b3cf"
+                    TextColor="#1f193b"
+                        x:Name="btnRegistrarse"
+                        Clicked="btnRegistrarse_Clicked"/>
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
