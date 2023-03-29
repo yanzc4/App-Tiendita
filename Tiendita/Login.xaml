@@ -2,12 +2,70 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Tiendita.Login"
-             NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Bienvenido a Login"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             NavigationPage.HasNavigationBar="False"
+             >
+    <StackLayout Background="#e4e9f7">
+        <StackLayout Padding="40,40,40,20">
+            <Image Source="logologin.png"
+               WidthRequest="250"/>
         </StackLayout>
-    </ContentPage.Content>
+        <StackLayout Margin="40,0,40,0">
+            <Label Text="Bienvenido!"
+                   TextColor="#707070"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   />
+            <Label Text="Inicia sesion para continuar"
+                   TextColor="#707070"/>
+            <Frame BackgroundColor="#C4CCDB"
+                       CornerRadius="10"
+                       HeightRequest="45"
+                       Margin="0,30,0,0"
+                       Padding="0">
+                <Entry x:Name="txtusuario"
+                                TextColor="#1f193b"
+                                PlaceholderColor="#1f193b"
+                                Margin="10,0,10,0"
+                                Placeholder="Ingresa usuario"/>
+            </Frame>
+            <Frame BackgroundColor="#C4CCDB"
+                       CornerRadius="10"
+                       HeightRequest="45"
+                       Margin="0,17,0,0"
+                       Padding="0">
+                <Entry x:Name="txtpass"
+                           TextColor="#1f193b"
+                           PlaceholderColor="#1f193b"
+                           Margin="10,0,10,0"
+                           Placeholder="Ingresa contraseña"/>
+            </Frame>
+        </StackLayout>
+        <Button Text="Iniciar"
+                    x:Name="btniniciar"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    WidthRequest="150"
+                    Margin="0,40,0,0"
+                    BackgroundColor="#7083ad"
+                    TextColor="#d4d9dc"/>
+        <Label Text="Olvidaste tu contraseña?"
+                   HorizontalOptions="Center"
+                   TextColor="#707070"
+                   FontSize="Micro"/>
+        <Grid RowDefinitions="*,*"
+                  VerticalOptions="EndAndExpand"
+                  Padding="0,0,0,10">
+            <Label Text="No tienes cuenta?"
+                       Grid.Column="0"
+                       TextColor="#707070"
+                       HorizontalOptions="End"/>
+            <Label Text="Puedes registrate"
+                       Grid.Column="1"
+                       TextColor="Blue"
+                       x:Name="linkregistrar"
+                       />
+        </Grid>
+
+    </StackLayout>
+
 </ContentPage>

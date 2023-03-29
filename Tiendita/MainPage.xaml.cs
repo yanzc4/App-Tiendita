@@ -17,12 +17,12 @@ namespace Tiendita
 
         private void btnLogin_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Login());
+            Navigation.PushAsync(new Login(),false);
         }
 
         private void btnRegistrarse_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Registrarse());
+            Navigation.PushAsync(new Registrarse(),false);
         }
     }
 }
